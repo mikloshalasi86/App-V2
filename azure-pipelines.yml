@@ -7,7 +7,9 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  name: default
+  demands: 
+    - docker
 
 steps:
 - script: echo Hello, world!
